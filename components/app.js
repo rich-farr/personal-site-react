@@ -1,15 +1,15 @@
 import React, { Component } from 'react'
+import Navbar from './navbar'
 
-class App extends Component {
-
-  constructor (props) {
-    super(props)
-  }
-
-  render () {
-    return <h1>Welcome to {this.props.name}</h1>
-  }
-
+class App extends React.Component {
+  render() {
+		return (
+		  <div id="container">
+		    <Navbar title="Rich Farr, W.D."/>
+					{this.props.children}
+		  </div>
+		)
+	}
 }
 
 export default App
