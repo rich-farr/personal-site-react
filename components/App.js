@@ -5,7 +5,7 @@ class App extends React.Component {
   render() {
 		return (
 		  <div id="container">
-		    <Nav title="Rich Farr, W.D."/>
+		    <Nav />
 					{this.props.children}
 		  </div>
 		)

@@ -7,12 +7,24 @@ class Home extends React.Component {
 		  <div id="home">
         <h2>This is the Home component</h2>
         <div id="home-links">
-          <Link to="/about" activeClassName="active">About</Link>
-          <Link to="/resume" activeClassName="active">Resume</Link>
-          <Link to="/projects" activeClassName="active">Projects</Link>
-          <a href="https://nz.linkedin.com/in/rich-farr-web-dev" target="_blank">LinkedIn</a>
-          <a href="https://github.com/rich-farr" target="_blank">Github</a>
-          <a href="mailto:scarletmanuka@gmail.com">Email</a>
+          <div className="home-link" id="about-link">
+            <Link to="/about" activeClassName="active">About</Link>
+          </div>
+          <div className="home-link" id="resume-link">
+            <Link to="/resume" activeClassName="active">Resume</Link>
+          </div>
+          <div className="home-link" id="projects-link">
+            <Link to="/projects" activeClassName="active">Projects</Link>
+          </div>
+          <div className="home-link" id="linkedin-link">
+            <a href="https://nz.linkedin.com/in/rich-farr-web-dev" target="_blank">LinkedIn</a>
+          </div>
+          <div className="home-link" id="github-link">
+            <a href="https://github.com/rich-farr" target="_blank">Github</a>
+          </div>
+          <div className="home-link" id="email-link">
+            <a href="mailto:scarletmanuka@gmail.com">Email</a>
+          </div>
         </div>
 		  </div>
 		)

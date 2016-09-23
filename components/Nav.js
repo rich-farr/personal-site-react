@@ -5,8 +5,8 @@ class Nav extends React.Component {
   render() {
 		return (
       <nav>
-        <div id="nav-heading">
-          <h1>{this.props.title}</h1>
+        <div className="nav-button">
+          <button className="nav-burger">Click 4 Nav</button>
         </div>
         <div id="nav-links">
           <IndexLink to="/" activeClassName="active">Home</IndexLink>
