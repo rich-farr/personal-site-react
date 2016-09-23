@@ -12,7 +12,7 @@ class Home extends React.Component {
           <Link to="/projects" activeClassName="active">Projects</Link>
           <a href="https://nz.linkedin.com/in/rich-farr-web-dev" target="_blank">LinkedIn</a>
           <a href="https://github.com/rich-farr" target="_blank">Github</a>
-          <a href="#" target="_blank">Email</a>
+          <a href="mailto:scarletmanuka@gmail.com">Email</a>
         </div>
 		  </div>
 		)
