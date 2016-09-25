@@ -2,37 +2,37 @@
   "links": [
     {
       "id": 1,
-      "type": "internal",
+      "is_url": false,
       "path": "about",
       "value": "About"
     },
     {
       "id": 2,
-      "type": "internal",
+      "is_url": false,
       "path": "resume",
       "value": "Resume"
     },
     {
       "id": 3,
-      "type": "internal",
+      "is_url": false,
       "path": "projects",
       "value": "Projects"
     },
     {
       "id": 4,
-      "type": "external",
+      "is_url": true,
       "path": "https://nz.linkedin.com/in/rich-farr-web-dev",
       "value": "LinkedIn"
     },
     {
       "id": 5,
-      "type": "external",
+      "is_url": true,
       "path": "https://github.com/rich-farr",
       "value": "Github"
     },
     {
       "id": 6,
-      "type": "external",
+      "is_url": true,
       "path": "mailto:scarletmanuka@gmail.com",
       "value": "Email"
     }
