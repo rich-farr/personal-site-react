@@ -11,7 +11,18 @@ class Home extends React.Component {
 		  <div id="home">
         <h2>This is the Home component</h2>
         <div id="home-links">
-
+          {links.map(function(link, index) {
+            return (
+              <div key = {index}>
+                <PageLink
+                  id = {link.id}
+                  is_url = {link.is_url}
+                  path = {link.path}
+                  value = {link.value}
+                />
+              </div>
+            )
+          })}
         </div>
 		  </div>
 		)
