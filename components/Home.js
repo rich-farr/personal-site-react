@@ -9,7 +9,7 @@ class Home extends React.Component {
   render() {
 		return (
 		  <div id="home">
-        <h2>This is the Home component</h2>
+        <img src="http://placehold.it/350x150" />
         <div id="home-links">
           {links.map(function(link, index) {
             return (
@@ -19,7 +19,7 @@ class Home extends React.Component {
                   is_url = {link.is_url}
                   path = {link.path}
                   value = {link.value}
-                  source = "home" 
+                  source = "home"
                 />
               </div>
             )
