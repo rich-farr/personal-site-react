@@ -1,5 +1,9 @@
 import React, { Component } from 'react'
 import { IndexLink, Link } from 'react-router'
+import data from '../db/links.json'
+import PageLink from './PageLink'
+
+const links = data.links
 
 class Nav extends React.Component {
   render() {
@@ -10,9 +14,19 @@ class Nav extends React.Component {
         </div>
         <div id="nav-links">
           <IndexLink to="/" activeClassName="active">Home</IndexLink>
-          <Link to="/about" activeClassName="active">About</Link>
-          <Link to="/resume" activeClassName="active">Resume</Link>
-          <Link to="/projects" activeClassName="active">Projects</Link>
+          {links.map(function(link, index) {
+            return (
+              <div key = {index}>
+                <PageLink
+                id = {link.id}
+                is_url = {link.is_url}
+                path = {link.path}
+                value = {link.value}
+                source = "nav"
+                />
+              </div>
+            )
+          })}
         </div>
       </nav>
 		)
