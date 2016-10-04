@@ -6,12 +6,24 @@ class App extends React.Component {
     super(props)
     this.state = {
       path: this.props.route.path,
-      isHome: ''
+      isHome: null
     }
   }
 
-  checkHome() {
-    if (this.state.path === '/') {
+  componentDidMount() {
+    this.onChange(this.state.path)
+    console.log('Component DID MOUNT!')
+  }
+
+  componentWillReceiveProps(newProps) {
+     let childPath = newProps.children.props.route.path
+     if (childPath !== undefined) {
+       this.onChange(childPath)
+     } else this.onChange('/')
+  }
+
+  onChange(path) {
+    if (path === '/') {
       this.setState({isHome: true})
     } else {
       this.setState({isHome: false})
@@ -19,9 +31,9 @@ class App extends React.Component {
   }
 
   render() {
-    let navHeader = this.state.isHome ? '' : <Nav />
+    let navHeader = this.state.isHome ? null : <Nav />
 		return (
-		  <div id="container" onLoad={this.checkHome.bind(this)}>
+		  <div id="container" ref="foo">
 		    {navHeader}
 				{this.props.children}
 		  </div>
