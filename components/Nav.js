@@ -9,9 +9,6 @@ class Nav extends React.Component {
   render() {
 		return (
       <nav>
-        <div className="nav-button">
-          <button className="nav-burger">Click 4 Nav</button>
-        </div>
         <div id="nav-links">
           <IndexLink to="/" activeClassName="active">Home</IndexLink>
           {links.map(function(link, index) {
