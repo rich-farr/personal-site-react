@@ -12,7 +12,6 @@ class App extends React.Component {
 
   componentDidMount() {
     this.onChange(this.state.path)
-    console.log('Component DID MOUNT!')
   }
 
   componentWillReceiveProps(newProps) {
