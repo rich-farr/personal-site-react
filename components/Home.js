@@ -19,6 +19,7 @@ class Home extends React.Component {
                   is_url = {link.is_url}
                   path = {link.path}
                   value = {link.value}
+                  image = {link.image}
                   source = "home"
                 />
               </div>

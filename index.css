@@ -7,6 +7,19 @@ main {
   text-align: center;
 }
 
+#home-links {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.home-link {
+  max-width: 33%;
+}
+
+.home-link img {
+  width: 100%;
+}
+
 @media (min-width: 420px) {
     /*Link {
       width: 100%;

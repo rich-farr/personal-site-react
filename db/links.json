@@ -4,37 +4,43 @@
       "id": 1,
       "is_url": false,
       "path": "about",
+      "image": null,
       "value": "About"
     },
     {
       "id": 2,
       "is_url": false,
       "path": "resume",
+      "image": null,
       "value": "Resume"
     },
     {
       "id": 3,
       "is_url": false,
       "path": "projects",
+      "image": null,
       "value": "Projects"
     },
     {
       "id": 4,
       "is_url": true,
       "path": "https://nz.linkedin.com/in/rich-farr-web-dev",
-      "value": "LinkedIn"
+      "image": "../public/images/linkedin.svg",
+      "value": "linkedin"
     },
     {
       "id": 5,
       "is_url": true,
       "path": "https://github.com/rich-farr",
-      "value": "Github"
+      "image": "../public/images/github.svg",
+      "value": "github"
     },
     {
       "id": 6,
       "is_url": true,
       "path": "mailto:scarletmanuka@gmail.com",
-      "value": "Email"
+      "image": "../public/images/mail.svg",
+      "value": "email"
     }
   ]
 }

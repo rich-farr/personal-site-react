@@ -5,7 +5,7 @@ let PageLink = (props) => {
   if (props.is_url) {
   	return (
   	  <div className={props.source + "-link"} id={props.source + "-" + props.value.toLowerCase() + "-link"}>
-        <a href={props.path} target="_blank">{props.value}</a>
+        <a href={props.path} target="_blank"><img src={props.image} alt={props.value} /></a>
   	  </div>
   	)
   } else {
